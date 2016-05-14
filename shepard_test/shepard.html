@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Shepard test</title>
+		<link rel="stylesheet" href="shepard.css">
+		<script src="shepard.js"></script>
+		<script src="3d.js"></script>
+		<script src="figures.js"></script>
+		<script src="buttonsDescription.js"></script>
+	</head>
+	<body>
+		<div id="start" align="center">
+			<p>
+				<h1> Тест Шепарда.</h1>
+					
+				<img src="../img/shepard.jpg" /><br/>
+				<br />
+				Данная методика направлена на выявление способностей мысленного вращения трехмерных объектов.
+				<br />
+				<strong>Инструкция: </strong>
+				В этом тесте дается пара трехмерных фигур, состоящих из одинаковых кубиков.
+				Ваша задача определить: одна ли это фигура.
+				<br />
+				
+				Данный тест представлен в двух режимах: в первом режиме возможно вращение фигур, а во втором нет.
+				Нужно пройти сначала в первом режиме, а затем во втором.
+				<br />
+				<br />
+			</p>
+			<p>
+				Фамилия
+			</p>
+			<input type="text" id = "surname" />
+			<p>
+				Имя
+			</p>
+			<input type="text" id = "name" />
+			<p>
+				Группа
+			</p>
+			<input type="text" id = "group" />
+			<br />
+			<p>
+				Специальность
+			</p>
+			<input list="specialtyList" id = "specialty" >
+			<datalist id="specialtyList">
+				<?php echo $specialtyArr ?>
+			</datalist>
+			<br>
+
+			<button id="buttonStart1">
+				Режим 1
+			</button>
+			<button id="buttonStart2">
+				Режим 2
+			</button>
+		</div>
+		<div id="test">
+			<strong>Инструкция: </strong>
+				В этом тесте дается пара трехмерных фигур, состоящих из одинаковых кубиков.
+				Ваша задача определить: одна ли это фигура.
+			<table>
+				<tr>
+					<td><canvas id="canvas1" width="600" height="600" ></canvas></td><td><canvas id="canvas2" width="600" height="600" ></canvas></td>
+				</tr>
+				<tr>
+					<td>
+					<button class="reply" id="replyYes">
+						Фигуры одинаковы
+					</button></td><td>
+					<button class="reply" id="replyNo">
+						Фигуры различны
+					</button></td>
+				</tr>
+			</table>
+			
+		</div>
+		<div id="result">
+			<!--<input type="button" onclick="showResult()" />-->
+			<table id="table"></table>
+		</div>
+	</body>
+</html>

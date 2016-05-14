@@ -1,0 +1,12 @@
+CREATE TABLE projection_test
+(
+id int(11) AUTO_INCREMENT,
+number_correct int(11),
+number_task int(11),
+average_time decimal(10,2),
+specialty_id int(11),
+array_result text,
+mode int(11),
+ts TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY(id)
+)

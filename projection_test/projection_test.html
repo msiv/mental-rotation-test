@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Projection test</title>
+		<link rel="stylesheet" href="projection_test.css">
+		<script src="projection_test.js"></script>
+		<script src="buttonsDescription.js"></script>
+		<script src="3d.js"></script>
+		<script src="randomScene.js"></script>
+	</head>
+	<body>
+		<div id="start" align="center">
+			<p>
+				<img src="../img/projection_test.jpg" /><br/>
+				<strong>Инструкция: </strong>
+				В этом тесте дается поверхность второго порядка и шесть проекций на различные плоскости.
+				Ваша задача выбрать две проеции, которые соответствуют данной поверхности. 
+				<br /> 
+				<br />
+				Данный тест представлен в двух режимах: в первом режиме возможно вращение поверхностей, а во втором нет.
+				Нужно пройти сначала в первом режиме, а затем во втором.
+				<br />
+				<br />
+			</p>
+			<p>Фамилия</p>
+			<input type="text" id = "surname" />
+			<p>Имя</p>
+			<input type="text" id = "name" />
+			<p>Группа</p>
+			<input type="text" id = "group" />
+			<br />
+			<p>Специальность</p>
+			<input list="specialtyList"  id = "specialty" >
+			<datalist id="specialtyList">
+				<?php echo $specialtyArr ?>
+			</datalist>
+			<br>
+			<button id="buttonStart1">
+				Режим 1
+			</button>
+			<button id="buttonStart2">
+				Режим 2
+			</button>
+		</div>
+		<div id="test">
+			<strong>Инструкция: </strong>
+				В этом тесте дается поверхность второго порядка и шесть проекций на различные плоскости.
+				Ваша задача выбрать две проеции, которые соответствуют данной поверхности.
+			<table>
+				<tr>
+					<td rowspan="3"><canvas id="ThreeJS" width="400" height="400"></canvas></td><td id="td1"><canvas id="ThreeJS1" width="200" height="200"></canvas></td><td id="td2"><canvas id="ThreeJS2" width="200" height="200"></canvas></td><td id="td3"><canvas id="ThreeJS3" width="200" height="200"></canvas></td>
+				</tr>
+				<tr>
+					<td id="td4"><canvas id="ThreeJS4" width="200" height="200"></canvas></td><td id="td5"><canvas id="ThreeJS5" width="200" height="200"></canvas></td><td id="td6"><canvas id="ThreeJS6" width="200" height="200"></canvas></td>
+				</tr>
+			</table>
+		</div>
+		<div id="result">
+			<!--<input type="button" onclick="showResult()" />-->
+			<table id="table"></table>
+		</div>
+	</body>
+</html>

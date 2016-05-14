@@ -1,0 +1,103 @@
+.centerLayer {
+	position: absolute;
+	width: 600px;
+	margin-left: 25%;
+	text-align: left;
+	padding: 0px;
+	visibility: hidden;
+}
+
+svg {
+	position: absolute;
+}
+
+#start{
+	position: absolute;
+	width: 600px;
+	margin-left: 25%;
+	padding: 0px;
+}
+
+#mouse {
+	position: absolute;
+	width: 600px;
+	height: 600px;
+}
+
+div.side {
+	position: absolute;
+	font-size: 50px;
+}
+
+#a1 {
+	position: absolute;
+	text-align: center;
+	font-size: 64px;
+	width: 16%;
+	margin-left: 42%;
+	margin-top: 43%;
+}
+
+#a2 {
+	position: absolute;
+	margin-left: 80%;
+	font-size: 32px;
+}
+
+#result {
+	position: absolute;
+	visibility: hidden;
+	margin-top: 40%;
+	width: 100%;
+	background-color: white;
+}
+
+#s0 {
+	margin-left: 80%;
+	margin-top: 45%;
+}
+
+#s1 {
+	margin-left: 70%;
+	margin-top: 70%;
+}
+
+#s2 {
+	margin-left: 45%;
+	margin-top: 80%;
+}
+
+#s3 {
+	margin-left: 20%;
+	margin-top: 70%;
+}
+
+#s4 {
+	margin-left: 10%;
+	margin-top: 45%;
+}
+
+#s5 {
+	margin-left: 20%;
+	margin-top: 20%;
+}
+
+#s6 {
+	margin-left: 45%;
+	margin-top: 10%;
+}
+
+#s7 {
+	margin-left: 70%;
+	margin-top: 20%;
+}
+
+div{
+	text-align: center;
+}
+
+#test2{
+	text-align: left;
+	width: 30%;
+	visibility: hidden;
+}

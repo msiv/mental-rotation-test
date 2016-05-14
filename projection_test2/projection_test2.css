@@ -1,0 +1,37 @@
+#test {
+	position: absolute;
+	visibility: hidden;
+	width: 100%;
+}
+
+#start{
+	position: absolute;
+	width: 600px;
+	margin-left: 25%;
+	padding: 0px;
+}
+
+.reply{
+	width: 100%;
+	font-size: 32px;
+}
+
+table{
+	width: 100%;
+}
+
+td{
+	 text-align: center;
+}
+
+#result {
+	visibility: hidden;
+	position: absolute;
+	margin-top: 20%;
+	margin-left: 20%;
+	background-color: white;
+}
+
+div{
+	text-align: center;
+}

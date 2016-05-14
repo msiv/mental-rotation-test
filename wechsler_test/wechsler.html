@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Wechsler test</title>
+		<link rel="stylesheet" href="wechsler.css">
+		<script src="wechsler.js"></script>
+		<script src="3d.js"></script>
+		<script src="cube.js"></script>
+		<script src="buttonsDescription.js"></script>
+	</head>
+	<body>
+		<div id="start" align="center">
+			<p>
+				<h1> Субтест Векслера.</h1>
+				<img src="../img/wechsler.jpg" /><br/>
+				<strong>Инструкция: </strong>
+				В этом тетсте даются кубик, представленный двумя изображениями с противоположных сторон, и четыре развертки, из которых только одна соответствует изображенному кубику.
+				Необходимо выбрать верный вариант развертки представленного кубика.
+				<br />
+				<br />
+				Данный тест представлен в двух режимах: в первом режиме возможно вращение кубика, а во втором нет.
+				Нужно пройти сначала в первом режиме, а затем во втором.
+				<br />
+				<br />
+			</p>
+			<p>Фамилия</p>
+			<input type="text" id = "surname" />
+			<p>Имя</p>
+			<input type="text" id = "name" />
+			<p>Группа</p>
+			<input type="text" id = "group" />
+			<br />
+			<p>Специальность</p>
+			<input list="specialtyList" id = "specialty" >
+			<datalist id="specialtyList">
+				<?php echo $specialtyArr ?>
+			</datalist>
+			<br>
+			<button id="buttonStart1">
+				Режим 1
+			</button>
+			<button id="buttonStart2">
+				Режим 2
+			</button>
+		</div>
+		<div id="test">
+			<strong>Инструкция: </strong>
+				В этом тетсте даются кубик, представленный двумя изображениями с противоположных сторон, и четыре развертки, из которых только одна соответствует изображенному кубику.
+				Необходимо выбрать верный вариант развертки представленного кубика.
+			<table>
+				<tr>
+					<td><canvas id="canvasCube" width="300" height="300" ></canvas></td><td id="td0"><canvas id="canvas0" width="300" height="225" ></canvas></td><td id="td1"><canvas id="canvas1" width="300" height="225" ></canvas></td>
+				</tr>
+				<tr>
+					<td><canvas id="canvasCubeBack" width="300" height="300" ></canvas></td><td id="td2"><canvas id="canvas2" width="300" height="225" ></canvas></td><td id="td3"><canvas id="canvas3" width="300" height="225" ></canvas></td>
+				</tr>
+			</table>
+		</div>
+		<div id="result">
+			<!--<input type="button" onclick="showResult()" />-->
+			<table id="table"></table>
+		</div>
+	</body>
+</html>

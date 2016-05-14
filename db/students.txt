@@ -1,0 +1,10 @@
+CREATE TABLE students
+(
+id int(11) AUTO_INCREMENT,
+name VARCHAR(30),
+surname VARCHAR(30),
+group_number INT(5),
+specialty_id int(11),
+ts TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY(id)
+)

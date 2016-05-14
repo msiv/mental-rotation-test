@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>compass</title>
+		<link rel="stylesheet" href="compass.css">
+		<script src="compass.js"></script>
+	</head>
+	<body>
+		<div id="start" align="center">
+			<p>
+				<h1> Тест компас.</h1>
+				
+				<img src="../img/compass1.jpg" /><br/>
+				Данный тест посвящен ориентированию относительно сторон света.<br />
+				<strong>Инструкция: </strong>
+				В данном тесте изображен круг, разделенный на 8 равных секторов, каждый сектор соответствует одному направлению. 
+				Вам даются два направления: известное (на изображении сверху - юго-запад) и неизвестное, указанное в центральной окружности (на изображении сверху - восток).
+				Вы должны сориентироваться относительно известного направления и указать сектор, который соответствует неизвестному направлению.				
+			</p>
+			<p>Фамилия</p>
+			<input type="text" id = "surname" />
+			<p>Имя</p>
+			<input type="text" id = "name" />
+			<p>Группа</p>
+			<input type="text" id = "group" />
+			<br />
+			<p>Специальность</p>
+			<input list="specialtyList" id = "specialty" >
+			<datalist id="specialtyList">
+				<?php echo $specialtyArr ?>
+			</datalist>
+			<br>
+			<button id="buttonStart">Начать тест</button>
+		</div>
+		<div id="test" class="centerLayer">
+			<svg id="svg" width="600" height="600" >
+				<circle cx="300" cy="300" r="300" stroke="#3cb2a8" stroke-width="4" fill="#ffe487" />
+				<line x1="414" y1="23" x2="186" y2="577" stroke="#3cb2a8" stroke-width="4" />
+				<line x1="186" y1="23" x2="414" y2="577" stroke="#3cb2a8" stroke-width="4" />
+				<line x1="23" y1="414" x2="577" y2="186" stroke="#3cb2a8" stroke-width="4" />
+				<line x1="577" y1="414" x2="23" y2="186" stroke="#3cb2a8" stroke-width="4" />
+				<path id="sector" stroke="#3cb2a8" stroke-width="1" fill="#ffc602"  />
+				<path id="sectorShow" stroke="#3cb2a8" stroke-width="1" fill="white"  />
+				<path id="sectorTrue" stroke="#3cb2a8" stroke-width="1" fill="#3cb2a8"  />
+				<circle cx="300" cy="300" r="60" stroke="#3cb2a8" stroke-width="4" fill="#3cb2a8" />
+			</svg>
+			<div class="side" id="s0">
+				В
+			</div>
+			<div class="side" id="s1">
+				ЮВ
+			</div>
+			<div class="side" id="s2">
+				Ю
+			</div>
+			<div class="side" id="s3">
+				ЮЗ
+			</div>
+			<div class="side" id="s4">
+				З
+			</div>
+			<div class="side" id="s5">
+				СЗ
+			</div>
+			<div class="side" id="s6">
+				С
+			</div>
+			<div class="side" id="s7">
+				СВ
+			</div>
+			<div id="a1"></div>
+			<div id="a2"></div>
+			<div id="mouse"></div>
+			<div id="result" >
+				<!--<input type="button" onclick="showResult()" />-->
+				<table id="table"></table>
+				
+			</div>
+			
+		</div>
+		<div id="test2"><strong>Инструкция: </strong>
+				<strong>Инструкция: </strong>
+				В данном тесте изображен круг, разделенный на 8 равных секторов, каждый сектор соответствует одному направлению. 
+				Вам даются два направления: известное и неизвестное, указанное в центральной окружности.
+				Вы должны сориентироваться относительно известного направления и указать сектор, который соответствует неизвестному направлению.
+			
+	</body>
+</html>

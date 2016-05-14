@@ -1,0 +1,32 @@
+#test {
+	position: absolute;
+	visibility: hidden;
+}
+
+#start{
+	position: absolute;
+	width: 600px;
+	margin-left: 25%;
+	padding: 0px;
+}
+
+img{
+	width: 100%;
+}
+
+.reply{
+	width: 100%;
+	font-size: 32px;
+}
+
+#result {
+	visibility: hidden;
+	position: absolute;
+	margin-top: 20%;
+	margin-left: 20%;
+	background-color: white;
+}
+
+div{
+	text-align: center;
+}

@@ -1,0 +1,6 @@
+CREATE TABLE specialty
+(
+id int(11) AUTO_INCREMENT,
+name varchar(256) NOT NULL,
+PRIMARY KEY(id)
+)
